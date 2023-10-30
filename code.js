@@ -1,4 +1,4 @@
-// лепилова 821
+// лепилова шленова 821
 
 // № 1
 // let elem = document.querySelector('#input');
@@ -162,45 +162,45 @@
 // });
 
 // № 15
-let dateInput = document.getElementById("dateInput");
-let result = document.getElementById("result");
-dateInput.addEventListener("blur", function() {
-    let date = dateInput.value;
-    let dayOfWeek = getDayOfWeek(date);
-    result.textContent = dayOfWeek;
-});
-function getDayOfWeek(dateString) {
-    let dateParts = dateString.split(".");
-    let day = parseInt(dateParts[0]);
-    let month = parseInt(dateParts[1]) - 1;
-    let year = parseInt(dateParts[2]);
-    let date = new Date(year, month, day);
-    let daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    return daysOfWeek[date.getDay()];
-}
+// let dateInput = document.getElementById("dateInput");
+// let result = document.getElementById("result");
+// dateInput.addEventListener("blur", function() {
+//     let date = dateInput.value;
+//     let dayOfWeek = getDayOfWeek(date);
+//     result.textContent = dayOfWeek;
+// });
+// function getDayOfWeek(dateString) {
+//     let dateParts = dateString.split(".");
+//     let day = parseInt(dateParts[0]);
+//     let month = parseInt(dateParts[1]) - 1;
+//     let year = parseInt(dateParts[2]);
+//     let date = new Date(year, month, day);
+//     let daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+//     return daysOfWeek[date.getDay()];
+// }
 
 // № 16
-// let numberInput = document.getElementById("numberInput");
-// let increaseButton = document.getElementById("increaseButton");
-// let decreaseButton = document.getElementById("decreaseButton");
-// increaseButton.addEventListener("click", function() {
-//     let currentValue = parseInt(numberInput.value);
-//     numberInput.value = currentValue + 1;
+// let input = document.getElementById("input");
+// let button1 = document.getElementById("button1");
+// let button2 = document.getElementById("button2");
+// button1.addEventListener('click', function() {
+//     let elem = parseInt(input.value);
+//     input.value = elem + 1;
 // });
-// decreaseButton.addEventListener("click", function() {
-//     let currentValue = parseInt(numberInput.value);
-//     if (currentValue > 0) {
-//         numberInput.value = currentValue - 1;
+// button2.addEventListener('click', function() {
+//     let elem = parseInt(input.value);
+//     if (elem > 0) {
+//         input.value = elem - 1;
 //     }
 // });
 
 // № 17
-// let numberInput = document.getElementById("numberInput");
-// let paragraphs = document.getElementsByTagName("p");
-// for (let i = 0; i < paragraphs.length; i++) {
-//     paragraphs[i].addEventListener("click", function() {
-//         let currentValue = parseInt(numberInput.value);
-//         numberInput.value = currentValue + 1;
+// let numberInput = document.getElementById('numberInput');
+// let elem = document.getElementsByTagName('p');
+// for (let i = 0; i < elem.length; i++) {
+//     elem[i].addEventListener("click", function() {
+//         let numberr = parseInt(numberInput.value);
+//         numberInput.value = numberr + 1;
 //     });
 // }
 
